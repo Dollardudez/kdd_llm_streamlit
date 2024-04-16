@@ -1,7 +1,7 @@
 import streamlit as st
 import json
 import threading
-from langchain.llms import HuggingFaceTextGenInference
+from langchain_community.llms import HuggingFaceTextGenInference  # Updated import
 from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from langchain.callbacks.streamlit.streamlit_callback_handler import StreamlitCallbackHandler
